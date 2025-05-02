@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/apps.js" defer></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title> CALCULADORA DE IMC  </title>
+</head>
+<body>
+    <header>
+    <h1>Calculadora de IMC</h1>
+    </header>
+
+    <main>
+        <h2>Calcula tu Índice de Masa Corporal (IMC)</h2>
+        <p>Introduce tus datos para calcular tu IMC y ver en qué categoría te encuentras.</p>
+    </main>
+  
+  <label for="nombre">Nombre</label>
+  <input type="text" id="nombre" placeholder="Ej: Juan Pérez">
+
+  <label for="edad">Edad</label>
+  <input type="number" id="edad" placeholder="Ej: 30">
+
+  <label for="peso">Peso (kg)</label>
+  <input type="number" id="peso" step="0.1" placeholder="Ej: 70.5">
+
+  <label for="altura">Altura (m)</label>
+  <input type="number" id="altura" step="0.01" placeholder="Ej: 1.75">
+  <br>
+
+  <button onclick="calcularIMC()">Calcular IMC</button>
+
+  <div id="resultado"></div>
+  <img id="imagenCategoria" src="" alt="" style="display:none;">
+
+  <div class="historial">
+    <h3>Historial de Resultados</h3>
+    <div id="listaHistorial"></div>
+  </div>
+
+       
+        
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
